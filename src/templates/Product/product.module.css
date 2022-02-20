@@ -1,0 +1,177 @@
+@value mqs: "../../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXLarge from mqs;
+
+.productContent > p:first-child {
+    font-size: 1.25rem;
+    @apply mb-4;
+    @apply mt-0;
+    @apply font-serif;
+    @apply italic;
+    @apply text-center;
+    @apply leading-normal;
+
+    @media (fromMedium) {
+        font-size: 1.5rem;
+        @apply mb-8;
+    }
+
+    @media (fromLarge) {
+        font-size: 2rem;
+        @apply mb-8;
+    }
+
+    @media (fromXLarge) {
+        font-size: 2.25rem;
+        @apply mb-8;
+    }
+
+}
+
+.productContent p {
+    @apply mt-3;
+    @apply text-sm;
+    @apply leading-loose;
+    @apply tracking-normal;
+
+
+    @media (fromMedium) {
+        font-size: 1.125rem;
+        @apply leading-8;
+    }
+}
+
+.productContent p > img {
+    @apply w-full;
+    @apply mt-8;
+}
+
+.productContent blockquote {
+    @apply my-6;
+
+    @media (fromMedium) {
+        @apply my-12;
+      }
+}
+
+.productContent blockquote p {
+    font-size: 1.25rem;
+    @apply pl-4;
+    @apply font-serif;
+    @apply mb-0;
+    @apply leading-normal;
+
+    @media (fromMedium) {
+        font-size: 1.75rem;
+      }
+}
+
+.productContent blockquote p:first-of-type {
+    @apply border-l-4;
+    @apply border-solid;
+    @apply border-Brand-gold;
+    
+}
+
+.productContent blockquote p:last-of-type:not(:first-of-type) {
+    font-size: 0.875rem;
+
+    @apply uppercase;
+    @apply font-bold;
+    @apply font-sans;
+    @apply mt-4;
+}
+
+.productContent h2 {
+    font-size: 1.5rem;
+    @apply leading-tight;
+    @apply font-serif;
+    @apply mt-16;
+    @apply font-normal;
+
+    @media (fromMedium) {
+        font-size: 2rem;
+    }
+
+    
+}
+
+.productContent h3 {
+    font-size: 1rem;
+    @apply leading-snug;
+    @apply font-serif;
+    @apply mt-6;
+    @apply font-normal;
+}
+
+.productContent h4 {
+    font-size: 0.875rem;
+    @apply leading-snug;
+    @apply font-serif;
+    @apply mt-3;
+    @apply font-normal;
+}
+
+.productContent ol {
+    list-style: decimal outside none;
+    @apply pl-4;
+    margin-left: 1rem;
+}
+
+.productContent ul li::before {
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    transform: translateY(-2px);
+    position: absolute;
+    left: -24px;
+    top: 13px;
+}
+
+.productContent ul li {
+    font-size: 1rem;
+    line-height: 1.625;
+    font-weight: 300;
+    @apply text-gray-900;
+    @apply relative;
+}
+
+.productContent ul li:first-of-type {
+    margin-top: 1rem;
+}
+
+.productContent ul {
+    margin-bottom: 2rem;
+    padding-left: 16px;
+    margin-left: 1rem;
+}
+
+.productContent ul li::before {
+    @apply bg-Brand-green;
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    transform: translateY(-2px);
+    position: absolute;
+    left: -24px;
+    top: 13px;
+}
+
+.productContent ul li {
+    @apply relative;
+    font-size: 1rem;
+    line-height: 1.625;
+    @apply text-gray-900;
+    font-weight: 300;
+}
+
+.productContent ul li:first-of-type {
+    margin-top: 1rem;
+}

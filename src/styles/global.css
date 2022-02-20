@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@value mqs: "../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXLarge, from2XLarge from mqs;
+
+/* Tailwind extends */
+
+/* Headings and text defaults */
+@responsive {
+  .display5XL {
+    font-size: 4.5rem;
+    line-height: 6rem;
+    @apply font-serif;
+  }
+
+  .display4XL {
+    font-size: 3.75rem;
+    line-height: 5rem;
+    @apply font-serif;
+  }
+
+  .display3XL {
+    font-size: 3rem;
+    line-height: 4rem;
+    @apply font-serif;
+  }
+
+  .display2XL {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    @apply font-serif;
+  }
+  
+  .displayXL {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    @apply font-serif;
+  }
+
+  .displayLG {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    @apply font-serif;
+  }
+
+  .displaySM {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    @apply font-serif;
+  }
+
+  .headingResponsive01 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    @apply font-serif;
+    @apply leading-none;
+
+    @media (fromSmall) {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+      letter-spacing: -1px;
+    }
+
+    @media (fromMedium) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @media (fromLarge) {
+      font-size: 3.5rem; 
+    }
+
+    @media (fromXLarge) {
+      font-size: 4rem;
+    }
+
+    @media (from2XLarge) {
+      font-size: 5rem;
+    }
+  }
+
+  .headingResponsive02 {
+    @apply font-serif;
+    @apply leading-tight;
+    font-size: 2rem;
+
+    @media (fromMedium) {
+      font-size: 2.5rem;
+    }
+
+    @media (fromLarge) {
+      font-size: 3rem;
+    }
+
+    @media (fromXLarge) {
+      font-size: 3.5rem;
+    }
+
+    @media (from2XLarge) {
+      font-size: 4rem;
+    }
+
+  }
+
+  .bodyText {
+    @apply text-sm;
+    @apply leading-loose;
+    @apply tracking-normal;
+
+    @media (fromMedium) {
+      @apply text-base;
+      @apply leading-loose;
+    }
+
+  }
+
+  .overline {
+    font-size: 0.75rem;
+    line-height: 100%;
+    @apply font-sans;
+    @apply tracking-wider;
+    @apply uppercase;
+
+    @media (fromLarge) {
+      font-size: 1rem;
+      line-height: 2.5rem;
+    }
+    
+  }
+
+  .uiBold {
+    font-size: 0.875rem;
+    line-height: 150%;
+    @apply font-bold;
+    @apply font-sans;
+  }
+
+  .uiRegular {
+    font-size: 0.875rem;
+    line-height: 150%;
+    letter-spacing: 0.25;
+    @apply font-sans;
+  }
+
+  .buttonText {
+    font-size: 0.875rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    @apply tracking-widest;
+  }
+
+  .introText {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    @apply font-bold;
+    @apply font-sans;
+  }
+
+  .caption {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    @apply font-sans;
+  }
+
+  .small {
+    font-size: 0.875rem;
+    line-height: 1.375rem
+  }
+
+  .quote {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    @apply text-center;
+    @apply font-serif;
+
+    @media (fromMedium) {
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+    }
+
+    @media (fromLarge) {
+      font-size: 1.875rem;
+      line-height: 2.75rem;
+    }
+
+    @media (fromXL) {
+      font-size: 2.25rem;
+      line-height: 3rem;
+    }
+  }
+
+  .grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+
+  .grid-rows-6 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* Global tidbits */
+.divider {
+  @apply h-0.10;
+  @apply w-12;
+  @apply bg-secondaryBrand-8;
+}
+
+.dividerLight {
+  @apply h-0.10;
+  @apply w-12;
+  @apply bg-white;
+}
+
+.headerHalfAndHalf {
+  background: linear-gradient(180deg, #162f42 50%, #FAF8F4 50%);
+}
+
+.headerHalfAndHalfDarker {
+  background: linear-gradient(180deg, #162f42 50%, #FAF8F4 50%);
+}
+
+.fadedBorder {
+  border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.afterBorder::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: hsla(0, 0%, 100%, .6);
+  position: absolute;
+  bottom: -25px;
+}
+
+/* HTML element default overrides */
+body {
+  @apply text-Brand-black;
+  @apply bg-Brand-white;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 150%;
+  @apply font-sans;
+  @apply text-body;
+}
+
+p a {
+  @apply text-secondaryBrand-9;
+}
+
+p a:hover {
+   @apply bg-Brand-gold;
+  @apply transition-all;
+  @apply duration-500;
+  @apply ease-in-out;
+  @apply underline;
+}
+
+a {
+  font-size: 1rem;
+  line-height: 150%;
+  @apply font-sans;
+}
+
+input {
+  @apply rounded-none;
+}
+
+/* Animations */
+@responsive {
+  .animate-reveal {
+    opacity: 0;
+    animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  }
+
+  .delay-0 {
+    animation-delay: 0;
+  }
+
+  .delay-1 {
+    animation-delay: 150ms;
+  }
+
+  .delay-2 {
+    animation-delay: 300ms;
+  }
+
+  .delay-3 {
+    animation-delay: 450ms;
+  }
+
+  .delay-4 {
+    animation-delay: 600ms;
+  }
+
+  .delay-5 {
+    animation-delay: 750ms;
+  }
+
+  .delay-6 {
+    animation-delay: 900ms;
+  }
+
+  .delay-7 {
+    animation-delay: 1050ms;
+  }
+}
+
+/* Bespoke global classes */
+@responsive {
+  .viewHeightBarHeader {
+    height: calc(100vh - 101px);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Saol Display";
+  src: url("/src/assets/fonts/SaolDisplay-Light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saol Display";
+  src: url("/src/assets/fonts/SaolDisplay-LightItalic.woff") format('woff');
+  font-weight: 300;
+  font-style: italic;
+}

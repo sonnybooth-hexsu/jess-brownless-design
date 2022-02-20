@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> should match snapshot 1`] = `
+<div>
+  <button
+    class="btn btnSecondaryOutline w-full mb-2 lg:hidden"
+  >
+    Filter
+  </button>
+  <form
+    class="hidden fixed overflow-scroll top-0 right-0 bg-white h-screen z-999 pt-4 pr-8 pl-8 pb-8 min-w-3/4 lg:block lg:static lg:h-auto"
+  >
+    <div
+      class="flex justify-between cursor-pointer itemscenter lg:hidden"
+    >
+      <h4>
+        Filter by
+      </h4>
+      <svg
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="18"
+          x2="6"
+          y1="6"
+          y2="18"
+        />
+        <line
+          x1="6"
+          x2="18"
+          y1="6"
+          y2="18"
+        />
+      </svg>
+    </div>
+    <fieldset
+      class="mt-4"
+    >
+      <legend
+        class="mt-4 mb-1 font-sans text-lg font-semibold"
+      >
+        Categories
+      </legend>
+      <div>
+        <label
+          class="checkboxContainer flex items-center mb-2 font-sans"
+        >
+          <input
+            checked=""
+            class="form-checkbox"
+            id="All"
+            name="All"
+            type="checkbox"
+          />
+          <div
+            class="checkbox"
+          />
+          <span
+            class="flex-grow ml-3 capitalize"
+          >
+            All
+          </span>
+        </label>
+      </div>
+      <div>
+        <label
+          class="checkboxContainer flex items-center mb-2 font-sans"
+        >
+          <input
+            class="form-checkbox"
+            data-testid="filterCheckbox"
+            id="Eye-0"
+            name="Eye"
+            type="checkbox"
+          />
+          <div
+            class="checkbox"
+          />
+          <span
+            class="flex-grow ml-3 capitalize"
+          >
+            Eye
+          </span>
+          <span
+            class="font-semibold text-textLight"
+          >
+            1
+          </span>
+        </label>
+      </div>
+      <div>
+        <label
+          class="checkboxContainer flex items-center mb-2 font-sans"
+        >
+          <input
+            class="form-checkbox"
+            data-testid="filterCheckbox"
+            id="Face-1"
+            name="Face"
+            type="checkbox"
+          />
+          <div
+            class="checkbox"
+          />
+          <span
+            class="flex-grow ml-3 capitalize"
+          >
+            Face
+          </span>
+          <span
+            class="font-semibold text-textLight"
+          >
+            1
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </form>
+</div>
+`;

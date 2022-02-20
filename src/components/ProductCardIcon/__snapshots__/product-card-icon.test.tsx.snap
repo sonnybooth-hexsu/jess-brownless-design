@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductCard /> should match snapshot 1`] = `
+<div>
+  <div
+    class="relative flex flex-col px-8 py-12 bg-white border border-black border-solid shadow-sm"
+  >
+    <img
+      alt="Lips"
+      class="self-start h-12"
+      loading="lazy"
+      src="/test-product.jpg"
+    />
+    <h2
+      class="mt-8 mb-2 text-3xl tracking-wide lg:text-2xl"
+      data-testid="productCardIconTitle"
+    >
+      Test title product icon card
+    </h2>
+    <p
+      class="flex-grow"
+    >
+      I am a test excerpt
+    </p>
+    <a
+      class="absolute top-0 bottom-0 left-0 right-0"
+      href="/test-product"
+    >
+      <span
+        class="sr-only"
+      >
+        Test title product icon card
+      </span>
+    </a>
+  </div>
+</div>
+`;

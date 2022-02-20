@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CTABlock /> should match snapshot 1`] = `
+<div>
+  <div
+    class="text-white bg-Brand-green"
+  >
+    <div
+      class="container py-24 sm:py-20 lg:py-40"
+    >
+      <div
+        class="grid grid-cols-12 gap-4"
+      >
+        <div
+          class="col-span-12 text-center lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4"
+        >
+          <h2
+            class="text-white headingResponsive02"
+          >
+            Book a consultation
+          </h2>
+          <p
+            class="col-span-12 mt-6 mb-8 text-white lg:col-span-6 lg:col-start-4"
+          >
+            If you would like to make an appointment or have an enquiry, please contact Miss Hawkes.
+          </p>
+          <a
+            class="inline-block mt-0 lg:self-start btnOutlineBright"
+            href="/contact"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              Contact Miss Hawkes
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

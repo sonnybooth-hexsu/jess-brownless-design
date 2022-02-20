@@ -1,0 +1,82 @@
+backend:
+  name: github
+  repo: sonnybooth-hexsu/dr-elizabeth-hawkes
+  branch: main
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: blog
+    label: Blog
+    folder: blogs
+    create: true
+    fields:
+    - { name: id, label: UniqueID, widget: number}
+    - { name: layout, label: Layout, widget: hidden, default: blog }
+    - { name: path, label: Path }
+    - { name: date, label: Date, widget: datetime }
+    - { name: title, label: Title }
+    - { name: excerpt, label: Excerpt}
+    - { name: author, label: Author}
+    - { name: category, label: Category}
+    - { name: image, label: Image, widget: image}
+    - { name: imageLarge, label: ImageLarge, widget: image}
+    - { name: authorImage, label: AuthorImage, widget: image}
+    - { name: body, label: Body, widget: markdown }
+  - name: press
+    label: Press
+    folder: press
+    create: true
+    fields:
+    - { name: id, label: UniqueID, widget: number}
+    - { name: date, label: Date, widget: datetime }
+    - { name: dateText, label: ArticleDate, }
+    - { name: yearNumber, label: PublishYear, widget: number}
+    - { name: title, label: Title }
+    - { name: excerpt, label: Excerpt}
+    - { name: image, label: Image, widget: image}
+    - { name: article, label: ArticleLink }
+  - name: oculoplasticServices
+    label: Oculoplastic Services
+    folder: oculoplastic-services
+    create: true
+    fields:
+    - { name: id, label: UniqueID, widget: number}
+    - { name: layout, label: Layout, widget: hidden, default: product }
+    - { name: path, label: Path }
+    - { name: title, label: Title }
+    - { name: excerpt, label: Excerpt}
+    - { name: excerptNav, label: ExcerptNav}
+    - { name: image, label: Image, widget: image}
+    - { name: type, label: Type, widget: hidden, default: "oculoplasticServices" }
+    - { name: body, label: Body, widget: markdown }
+    - { name: video, label: Video, widget: file }
+  - name: aestheticServices
+    label: Aesthetic Services
+    folder: aesthetic-services
+    create: true
+    fields:
+    - { name: id, label: UniqueID, widget: number}
+    - { name: layout, label: Layout, widget: hidden, default: product }
+    - { name: path, label: Path }
+    - { name: title, label: Title }
+    - { name: excerpt, label: Excerpt}
+    - { name: excerptNav, label: ExcerptNav}
+    - { name: image, label: Image, widget: image}
+    - { name: type, label: Type, widget: hidden, default: "aestheticServices" }
+    - { name: body, label: Body, widget: markdown }
+    - { name: video, label: Video, widget: file }
+  - name: conditions
+    label: Conditions
+    folder: conditions
+    create: true
+    fields:
+    - { name: id, label: UniqueID, widget: number}
+    - { name: layout, label: Layout, widget: hidden, default: product }
+    - { name: path, label: Path }
+    - { name: title, label: Title }
+    - { name: excerpt, label: Excerpt}
+    - { name: excerptNav, label: ExcerptNav}
+    - { name: image, label: Image, widget: image}
+    - { name: type, label: Type, widget: hidden, default: "conditions" }
+    - { name: body, label: Body, widget: markdown }
+    - { name: video, label: Video, widget: file }

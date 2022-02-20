@@ -1,0 +1,117 @@
+@value mqs: "../../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXL from mqs;
+@value vars: "../../styles/variables.module.css";
+@value dropDownMenu, fixedNav from vars;
+
+.headerContainer {
+  @apply relative; 
+  @apply transition-all;
+  @apply ease-in;
+  @apply duration-300;
+  @apply border-solid;
+  @apply border-b-1;
+  @apply px-8;
+}
+
+.headerLogo {
+  @apply h-20;
+  @apply flex;
+  @apply items-center;
+
+  @media (fromLarge) {
+    @apply pb-6;
+  }
+}
+
+.headerLogoImage {
+  @apply h-4;
+
+  @media (fromLarge) {
+    @apply h-12;
+  }
+}
+
+.headerContainerFixed {
+  @apply fixed;
+  @apply top-0;
+  @apply w-screen;
+  z-index: fixedNav;
+}
+
+.headerContainerRetreat {
+  top: -100px;
+}
+
+.header {
+  @apply flex;
+  @apply items-center;
+  @apply justify-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (fromLarge) {
+    @apply pt-6;
+    @apply pb-0;
+  }
+}
+
+.headerNavigation {
+  @apply hidden;
+
+  @media (fromLarge) {
+    @apply inline-block;
+    @apply pl-8;
+    @apply flex-shrink-0;
+  }
+}
+
+.headerNavigationList {
+  @apply flex;
+  @apply items-center;
+  @apply pb-6;
+}
+
+.headerNavigationList > li {
+  @apply mr-4;
+  @apply cursor-pointer;
+  @apply py-4;
+}
+
+.headerNavigationList > li > div {
+  z-index: dropDownMenu;
+}
+
+.headerNavigationList > li > div a {
+  margin-bottom: 1rem;
+}
+
+.headerNavigationList > li > div a:last-of-type {
+  margin-bottom: 0;
+}
+
+.headerNavigationList > li:last-of-type {
+  @apply mr-0;
+}
+
+.headerNavigationLinkItem {
+  @apply relative;
+}
+
+.headerNavigationLinkItem,
+.headerNavigationLink {
+  composes: uiRegular from '../../styles/global.css';
+  @apply block;
+}
+
+.headerNavigationSubMenu svg {
+  margin-left: 0.25rem;
+  margin-top: 2px;
+}
+
+.headerMenuIcon {
+  @apply cursor-pointer;
+
+  @media (fromLarge) {
+    @apply hidden;
+  }
+}

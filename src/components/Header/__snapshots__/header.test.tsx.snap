@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<div>
+  <div
+    class="
+      bg-Brand-green
+      text-white
+      
+      
+       headerContainer fadedBorder"
+  >
+    <div
+      class="header container"
+    >
+      <a
+        class="headerLogo"
+        href="/"
+      >
+        <img
+          alt="Test Site"
+          class="headerLogoImage"
+          src="test-file-stub"
+        />
+      </a>
+      <svg
+        class="headerMenuIcon"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="3"
+          x2="21"
+          y1="12"
+          y2="12"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="6"
+          y2="6"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+      <nav
+        class="headerNavigation"
+      >
+        <ol
+          class="headerNavigationList"
+        >
+          <li
+            data-testid="subLinkMenu"
+            tabindex="0"
+          >
+            <span
+              class="headerNavigationSubMenu"
+            >
+              Link 1
+              <svg
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  points="6 9 12 15 18 9"
+                />
+              </svg>
+            </span>
+            <div
+              class="hidden"
+              data-testid="subLinkMenuList"
+            >
+              <div
+                class="container grid grid-cols-3 gap-6 mx-auto"
+              >
+                <a
+                  href="Sub link-1"
+                >
+                  Sub Link 1
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            class="headerNavigationLinkItem "
+            data-testid="headerNavigationLink"
+          >
+            <a
+              class="headerNavigationLink"
+              href="link-2"
+            >
+              <span
+                class="xl:hidden"
+              >
+                Link 2
+              </span>
+              <span
+                class="hidden xl:block"
+              >
+                Link 2
+              </span>
+            </a>
+          </li>
+          <li
+            class="headerNavigationLinkItem "
+            data-testid="headerNavigationLink"
+          >
+            <a
+              class="headerNavigationLink"
+              href="link-3"
+            >
+              <span
+                class="xl:hidden"
+              >
+                Link 3
+              </span>
+              <span
+                class="hidden xl:block"
+              >
+                Link 3
+              </span>
+            </a>
+          </li>
+          <li
+            class="headerNavigationLinkItem "
+          >
+            <a
+              class="headerNavigationLink"
+              href="/contact"
+            >
+              Contact
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,76 @@
+.btn {
+  composes: buttonText from './global.css';
+  @apply py-4;
+  @apply px-6;
+}
+
+.btnSmall {
+  composes: uiRegular from './global.css';
+  @apply py-4;
+  @apply px-5;
+}
+
+.btnPrimary {
+  composes: btn;
+  @apply px-8;
+  @apply text-Brand-white;
+  @apply bg-Brand-green;
+}
+
+.btnOutline {
+  composes: btn;
+  @apply border-white;
+  @apply border-1;
+  @apply border-solid;
+}
+
+.btnOutlineSmall {
+  composes: btnSmall;
+  composes: btnOutline;
+  @apply py-2;
+}
+
+.btnOutlineDark {
+  composes: btnOutline;
+   @apply bg-Brand-green;
+}
+
+.btnOutlineDarkSmall {
+  composes: btnOutlineSmall;
+   @apply bg-Brand-green;
+}
+
+.btnOutlineBright {
+  composes: btnOutline;
+  @apply border-white;
+}
+
+.btnBright {
+  composes: btn;
+  @apply text-gray-800;
+  @apply bg-secondaryBrand-8;
+  @apply py-5;
+  @apply px-6;
+}
+
+.btnBrightWhite {
+  composes: btn;
+  @apply text-gray-800;
+  @apply bg-white;
+  @apply py-5;
+  @apply px-6;
+}
+
+.btnBrightSmall {
+  composes: btnSmall;
+  @apply text-gray-900;
+  @apply bg-secondaryBrand-8;
+}
+
+.btnDark {
+  composes: btn;
+  @apply text-white;
+  @apply bg-black;
+  @apply py-5;
+  @apply px-6;
+}

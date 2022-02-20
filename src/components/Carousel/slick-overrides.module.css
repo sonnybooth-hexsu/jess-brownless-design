@@ -1,0 +1,130 @@
+@value mqs: "../../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXL from mqs;
+
+:global(.slick-slider) {
+    position: relative;
+}
+
+:global(.slick-list) {
+    overflow: hidden;
+}
+
+:global(.slick-track) {
+    display: flex;
+}
+
+:global(.slick-slide) {
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+:global(.slick-slide > div) {
+    height: 100%;
+}
+
+:global(.slick-slide > div > div) {
+    display: flex !important;
+}
+
+:global(.pressSlider .slick-slide) {
+    margin-right: 0;
+}
+
+:global(.pressSlider .slick-slide > div > div) {
+    justify-content: center;
+}
+
+:global(.pressSlider .slick-slide > div > div svg) {
+    max-width: 88px;
+
+    @media (fromMedium) {
+        max-width: 120px;
+    }
+}
+
+:global(.pressSlider .slick-slide > div) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:global(.slick-slide:first-of-type > div) {
+    margin-left: 0;
+}
+
+:global(.slick-dots) {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+:global(.slick-dots li) {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: theme('colors.primary');
+}
+
+:global(.slick-dots li button) {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+:global(.slick-dots li.slick-active) {
+    @apply bg-Brand-green;
+    opacity: 1;
+}
+
+:global(.slick-dots li) {
+    @apply bg-Brand-green;
+    opacity: 0.4;
+    width: 10px;
+    height: 10px;
+}
+
+:global(.slick-next) {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: calc(50% - 24px); /* minus icn size */
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0;
+    right: -1rem; /* size + rem of gap */;
+    transform: translateY(-100%);
+    cursor: pointer;
+    border: none;
+    z-index: 999;
+
+    @media (fromMedium) {
+        right: -1.75rem; /* only more when its .5 as last item */;
+    }
+}
+
+:global(.slick-prev) {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: calc(50% - 24px); /* minus icn size */
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    left: -1rem; /* size + rem of gap */
+    padding: 0;
+    transform: translateY(-100%);
+    cursor: pointer;
+    border: none;
+    z-index: 999;
+
+    @media (fromMedium) {
+        left: -0.75rem; /* size + rem of gap */;
+    }
+}
+
+:global(.slick-arrow.slick-disabled) {
+    display: none !important;
+}

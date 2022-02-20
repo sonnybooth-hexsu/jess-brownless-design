@@ -1,0 +1,135 @@
+@value mqs: "../../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXL from mqs;
+
+.blogContent > p:first-child {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    @apply font-bold;
+    @apply mb-4;
+
+    @media (fromLarge) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+.blogContent p {
+    @apply mb-4;
+}
+
+.blogContent p > img {
+    @apply w-full;
+}
+
+.blogContent blockquote {
+    @apply mb-16;
+    @apply mt-16;
+}
+
+.blogContent blockquote p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    @apply pl-8;
+    @apply font-serif;
+    @apply italic;
+    @apply mb-0;
+
+    @media (fromSmall) {
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+    }
+}
+
+.blogContent blockquote p:first-of-type {
+    @apply border-l-8;
+    @apply border-solid;
+    @apply border-secondaryBrand-8;
+}
+
+.blogContent blockquote p:last-of-type:not(:first-of-type) {
+    font-size: 0.875rem;
+    line-height: 150%;
+    @apply uppercase;
+    @apply font-bold;
+    @apply font-sans;
+    @apply mt-4;
+}
+
+.blogContent h2 {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    @apply font-serif;
+    @apply mb-2;
+    @apply mt-8;
+}
+
+.blogContent ol {
+    list-style: decimal outside none;
+    @apply pl-4;
+    margin-left: 1rem;
+}
+
+.blogContent ul li::before {
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    transform: translateY(-2px);
+    position: absolute;
+    left: -24px;
+    top: 13px;
+}
+
+.blogContent ul li {
+    font-size: 1rem;
+    line-height: 1.625;
+    font-weight: 300;
+    @apply text-gray-900;
+    @apply relative;
+}
+
+.blogContent ul li:first-of-type {
+    margin-top: 1rem;
+}
+
+.blogContent ul {
+    margin-bottom: 2rem;
+    padding-left: 16px;
+    margin-left: 1rem;
+}
+
+.blogContent ul li::before {
+     @apply bg-Brand-green;
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    transform: translateY(-2px);
+    position: absolute;
+    left: -24px;
+    top: 13px;
+}
+
+.blogContent ul li {
+    @apply relative;
+    font-size: 1rem;
+    line-height: 1.625;
+    @apply text-gray-900;
+    font-weight: 300;
+}
+
+.blogContent ul li:first-of-type {
+    margin-top: 1rem;
+}
+
+.blogContent ul {
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    padding-left: 16px;
+}

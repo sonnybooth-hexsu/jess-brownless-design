@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleCard /> should match snapshot 1`] = `
+<div>
+  <div
+    class="grid grid-cols-12 gap-6"
+  >
+    <div
+      class="col-span-12 mb-6 lg:col-span-5 lg:col-start-8"
+    >
+      <img
+        alt="Article advert"
+        class="w-full"
+        data-testid="articleItemImage"
+        height="240"
+        width="360"
+      />
+    </div>
+    <div
+      class="col-span-12 lg:row-start-1 lg:col-start-1 lg:col-span-6"
+    >
+      <div
+        class="flex items-center"
+      >
+        <p
+          class="uppercase overline text-secondaryBrand-9 mb-1"
+        />
+      </div>
+      <h2
+        class="displayLG"
+      />
+      <p
+        class="mt-2 text-gray-500"
+      />
+      <a
+        class="inline-block mt-8 btnOutlineDarkSmall"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Read more
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Benefits /> should match snapshot 1`] = `
+<div>
+  <div
+    class="grid grid-cols-12 gap-4 lg:gap-6"
+  >
+    <h2
+      class="col-span-12 mb-8 md:text-center md:col-span-8 md:col-start-3 xl:col-span-6 xl:col-start-4"
+    >
+      Bespoke cosmetic injectables and skin treatment plans.
+    </h2>
+    <div
+      class="col-span-12 mb-4 md:flex md:flex-wrap md:justify-center lg:col-start-3 lg:col-span-8"
+    >
+      <div
+        class="flex items-center mb-4 md:mx-4 md:justify-center"
+        data-testid="benefitsItem"
+      >
+        <svg
+          class="text-gray-100"
+          fill="none"
+          height="32"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+          />
+          <polyline
+            points="22 4 12 14.01 9 11.01"
+          />
+        </svg>
+        <p
+          class="pb-0 ml-4"
+        >
+          Benefit 1
+        </p>
+      </div>
+      <div
+        class="flex items-center mb-4 md:mx-4 md:justify-center"
+        data-testid="benefitsItem"
+      >
+        <svg
+          class="text-gray-100"
+          fill="none"
+          height="32"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+          />
+          <polyline
+            points="22 4 12 14.01 9 11.01"
+          />
+        </svg>
+        <p
+          class="pb-0 ml-4"
+        >
+          Benefit 2
+        </p>
+      </div>
+      <div
+        class="flex items-center mb-4 md:mx-4 md:justify-center"
+        data-testid="benefitsItem"
+      >
+        <svg
+          class="text-gray-100"
+          fill="none"
+          height="32"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+          />
+          <polyline
+            points="22 4 12 14.01 9 11.01"
+          />
+        </svg>
+        <p
+          class="pb-0 ml-4"
+        >
+          Benefit 3
+        </p>
+      </div>
+    </div>
+    <div
+      class="col-span-12 text-center"
+    >
+      <a
+        class="btn btnSecondary block w-full md:inline-block md:w-auto"
+        href="/treatments"
+      >
+        View treatments
+      </a>
+    </div>
+  </div>
+</div>
+`;

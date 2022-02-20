@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextImage /> should match snapshot 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="textImageContainer"
+    >
+      <img
+        alt="Girl smiling"
+        data-testid="textImageCover"
+        loading="lazy"
+        src="test-file-stub"
+      />
+      <div
+        class="textImageChildren"
+      >
+        <h2
+          data-testid="textImageChild"
+        >
+          I am test child
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,72 @@
+/* Helper classes */
+@value mqs: "./mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXL from mqs;
+
+/* Components */
+.checkboxContainer {
+  position: relative;
+  padding-left: 1.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 1px solid theme('colors.gray.900');
+  transform: translateY(3px);
+}
+
+.checkbox:after {
+  content: " ";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContainer input:checked ~ div:after {
+  display: block;
+}
+
+.checkboxContainer div:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.cmsContainer {
+  width: 600px;
+  left: calc(-300px + 50%);
+}
+
+
+
+@media (fromLarge) {
+  .serviceHelpWithEyeCard {
+    transform: translate(48px, 48px);
+    width: calc(50% + 48px);
+  }
+  
+  .serviceNoneSurgicalCard {
+    transform: translate(-48px, 48px);
+    width: calc(50% + 48px);
+  }
+  
+  .serviceOculCard {
+    transform: translate(-48px, 48px);
+    width: calc(50% + 48px);
+  }
+}

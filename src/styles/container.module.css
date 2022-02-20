@@ -1,0 +1,37 @@
+@value mqs: "../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXLarge, from 2XLarge from mqs;
+
+.container {
+    @apply px-8;
+    @apply py-16;
+    @apply mx-auto;
+    @apply w-full;
+    @apply grid;
+    @apply grid-cols-12;
+    @apply gap-4; 
+
+    @media (fromSmall) {
+      max-width: theme('screens.sm');
+    }
+    
+    @media (fromMedium) {
+      max-width: theme('screens.md');
+      @apply px-16;
+      @apply py-24;
+      @apply gap-6;
+    }
+
+    @media (fromLarge) {
+      max-width: theme('screens.lg');
+    }
+    
+    @media (fromXLarge) {
+      @apply px-19;
+      max-width: theme('screens.xl');
+    }  
+
+    @media (from2XLarge) {
+      @apply px-19;
+      max-width: theme('screens.2xl');
+    }  
+}

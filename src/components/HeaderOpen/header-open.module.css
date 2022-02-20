@@ -1,0 +1,86 @@
+@value vars: "../../styles/variables.module.css";
+@value dropDownMenuOpen from vars;
+@value mqs: "../../styles/mqs.module.css";
+@value fromSmall, fromMedium, fromLarge, fromXL from mqs;
+
+.headerContainer {
+  @apply text-white;
+  @apply bg-Brand-green;
+  @apply fixed;
+  @apply inset-0;
+  @apply h-screen;
+  z-index: dropDownMenuOpen;
+}
+
+.header {
+  @apply flex;
+  @apply items-center;
+  @apply justify-between;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  @media (fromLarge) {
+    @apply py-6;
+  }
+}
+
+.headerLogo {
+  @apply h-6;
+  @apply flex;
+  @apply items-center;
+}
+
+.headerLogoImage {
+  @apply h-4;
+
+  @media (fromLarge) {
+    @apply h-6;
+  }
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.headerNavigation {
+  @apply pt-8;
+  overflow: auto;
+  max-height: 80vh
+}
+
+.headerNavigationLink {
+  @apply mb-4;
+  @apply cursor-pointer;
+  @apply text-base;
+}
+
+.headerNavigationLink a {
+  @apply text-base;
+}
+
+
+.headerNavigation li > div {
+  padding: 0 1rem 1rem 0;
+  top: 100%;
+  @apply mt-6;
+}
+
+.headerNavigation li > div a {
+  @apply pl-3;
+  display: block;
+  margin: 1rem 0 0;
+}
+
+.headerNavigationSubMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerMenuIcon {
+  cursor: pointer;
+}
